@@ -31,25 +31,25 @@ body{background:#e9e5dc;font-family:-apple-system,BlinkMacSystemFont,"PingFang T
 .photo svg{width:48px;height:48px;color:var(--gold)}
 .who{min-width:0}
 .name{margin:0;font-size:30px;font-weight:600;letter-spacing:.14em;white-space:nowrap}
-.name small{font-size:14px;color:var(--gold);letter-spacing:0;margin-left:4px;font-weight:500}
-.name-en{color:var(--gold);letter-spacing:.28em;font-size:13px;margin-top:6px}
+.name small{font-size:14px;color:var(--gold);letter-spacing:0;margin-left:12px;font-weight:500}
+.name-en{color:var(--gold);letter-spacing:.28em;font-size:13px;margin-top:6px;padding-left:8px}
 .sheet{background:var(--cream);border-radius:24px 24px 0 0;padding:20px 20px 28px}
 @media (min-width:500px){.sheet{border-radius:24px 24px 0 0}}
 .roles{list-style:none;margin:0;padding:0}
-.roles li{display:flex;justify-content:space-between;gap:12px;padding:9px 0;border-bottom:1px solid var(--line);font-size:15px}
+.roles li{display:flex;justify-content:space-between;gap:12px;padding:11px 0;border-bottom:1px solid var(--line);font-size:17px}
 .roles li:last-child{border-bottom:0}
 .roles b{font-weight:600;color:var(--gold-d);white-space:nowrap}
-.intro{margin:14px 0 0;padding:2px 0 2px 12px;border-left:3px solid var(--gold);color:var(--muted);font-size:14px;line-height:1.75}
+.intro{margin:14px 0 0;padding:2px 0 2px 12px;border-left:3px solid var(--gold);color:var(--muted);font-size:16px;line-height:1.75}
 .btns{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:20px}
 .btn{display:flex;align-items:center;justify-content:center;gap:8px;border:0;border-radius:14px;padding:15px 10px;font-size:16px;font-weight:600;text-decoration:none;cursor:pointer;font-family:inherit;color:#fff}
 .btn svg{width:22px;height:22px;flex:none}
 .line{background:#06c755}.fb{background:#1877f2}
 .save{grid-column:1/-1;background:var(--navy);color:#f3ead7}
 .info{margin-top:16px;border-top:1px solid var(--line);padding-top:6px}
-.info a,.info div{display:flex;gap:12px;padding:9px 0;color:inherit;text-decoration:none;font-size:14px;line-height:1.5}
-.info span:first-child{width:44px;flex:none;color:var(--muted);font-size:13px}
+.info a,.info div{display:flex;gap:12px;padding:9px 0;color:inherit;text-decoration:none;font-size:17px;line-height:1.5}
+.info span:first-child{width:46px;flex:none;color:var(--muted);font-size:15px;padding-top:1px}
 .info span:last-child{overflow-wrap:anywhere}
-.share{display:block;margin:16px auto 0;background:none;border:0;color:var(--muted);font-size:13px;font-family:inherit;cursor:pointer;text-decoration:underline}
+.share{display:block;margin:16px auto 0;background:none;border:0;color:var(--muted);font-size:15px;font-family:inherit;cursor:pointer;text-decoration:underline}
 .photo img{object-position:center 18%}
 .ws .d{display:none}
 body.light .wrap{background:#fff}
@@ -63,6 +63,8 @@ body.light .name-en{color:var(--gold-d)}
 body.light .sheet{background:#fff;border-top:3px solid var(--gold)}
 .toast{position:fixed;left:50%;bottom:28px;transform:translateX(-50%);background:#000c;color:#fff;padding:10px 16px;border-radius:10px;font-size:14px;opacity:0;transition:opacity .2s;pointer-events:none}
 .toast.on{opacity:1}
+.info a:last-child span:last-child{white-space:nowrap;font-size:15.5px;letter-spacing:-.01em}
+.intro{word-break:keep-all}
 </style>
 </head>
 <body class="light">
@@ -104,7 +106,7 @@ const CARD = {
     { org: "碁元投資有限公司", title: "執行董事" },
     { org: "碁元知識移動股份有限公司", title: "負責人" }
   ],
-  intro: "專注中小企業記帳、稅務簽證與公司登記，用數位工具讓帳務更透明。",
+  intro: "新創 IPO 輔導 × 事務所 AI 轉型 × 創新財會服務",
   photo: "photo.jpg",       // 大頭照
   line: "https://line.me/ti/p/~yayaham",   // LINE 加好友連結
   facebook: "https://www.facebook.com/yayaham",   // 臉書網址
